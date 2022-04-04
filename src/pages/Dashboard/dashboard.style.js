@@ -1,369 +1,610 @@
 import styled from "styled-components";
 
-export const Title = styled.div`
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin-top: 60px;
-    @media screen and (max-width:500px){
-        font-size: 26px !important;
-    }
+export const Home = styled.div`
+    width: 1440px;
+    overflow: hidden;
 `;
-export const Text = styled.div`
-    width: 90%;
-    margin: 10px auto 0 auto;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-`;
-export const TotalValue = styled.div`
-    width: 1030px;
-    margin: 47px auto 0 auto;
-    height: 100px;
-    position: relative;
-    border-radius: 20px;
+export const Top = styled.div`
     display: flex;
-    font-size: 20px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to left, rgb(2, 46, 89) 100%, rgba(21, 62, 103, 0.38) 50%, rgba(74, 125, 175, 0.56) 0%);
-    @media screen and (max-width:1080px){
-        width: 95% !important;
-        max-width: 100% !important;
-    }
-`;
-export const RightSpider = styled.img`
-    width: 70px;
-    height: 97px;
-    right: 10px;
-    top: 0;
-    position: absolute;
-`;
-export const LeftGhost = styled.img`
-    width:145px;
-    height: 143px;
-    position: absolute;
-    left: 14px;
-    top: -43px;
-`;
-export const LockedText = styled.div`
-    color:rgb(64, 255, 90);
-    font-weight: bold;
-    font-size: 42px;
-`;
-export const ItemsPart = styled.div`
-    max-width: 1030px;
-    display: grid;
-    margin: 25px auto 100px auto;
-    grid-template-columns: repeat(2,1fr);
-    gap: 25px;
-    @media screen and (max-width:1080px){
-        width: 95% !important;
-        max-width: 100% !important;
-        grid-template-columns: 1fr !important;
-    }
-`;
-export const ItemToken = styled.div`
-    width: 502.5px;
-    height: auto;
-    border-radius: 20px;
-    background-color: rgb(21, 62, 103);
-    padding: 18px 22px 22px;
-    @media screen and (max-width:1080px){
-        width: 100% !important;
-    }
-`;
-export const ItemStaking = styled.div`
-    width: 502.5px;
-    border-radius: 20px;
-    background-color: rgb(21, 62, 103);
-    padding: 18px 22px 22px;
-    @media screen and (max-width:1080px){
-        width: 100% !important;
-    }
-`;
-export const ItemXFM = styled.div`
-    width: 502.5px;
-    border-radius: 20px;
-    background-color: rgb(21, 62, 103);
-    padding: 30px 20px;
-    display: flex;
-    position: relative;
     justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width:1080px){
-        width: 100% !important;
-    }
-`;
-export const Token = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`;
-export const TokenLeft = styled.div`
-    display: flex;
-    align-items: center;
-`;
-export const TokenRight = styled.div``;
-export const TokenImg = styled.img`
-    width:52px;
-    height:52px;
-    border-radius: 15px;
-`;
-export const RightBottom = styled.div`
-    font-size: 14px;
-    color: #fff;
-    text-align: right;
-    margin-top: 4px;
-`;
-export const RightTop = styled.div`
-    font-size: 16px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    @media screen and (max-width:430px){
-        font-size: 14px !important;
-    }
-`;
-
-export const TokenText = styled.div`
-    margin-left: 10px;
-`;
-export const Ttitle = styled.div`
-    font-size: 24px;
-    font-weight:bold;
-    color: rgb(160, 231, 255);
-    @media screen and (max-width:430px){
-        font-size: 18px !important;
-    }
-`;
-export const Ttext = styled.div`
-    color: rgb(241, 60, 242);
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 500;
-    :hover{
-        text-decoration: underline;
-    }
-    @media screen and (max-width:430px){
-        font-size: 14px !important;
-    }
-`;
-export const GreenColor = styled.div`
-    font-size: 18px;
-    font-weight: 500;
-    color: rgb(64, 255, 90);
-    @media screen and (max-width:430px){
-        font-size: 14px !important;
-    }
 `;
 export const Middle = styled.div`
-    margin-top: 18px;
-    padding: 18px;
-    border-radius: 20px;
-    border: 1px solid rgb(39, 92, 138);
-    background-color: rgb(20, 57, 94);
-`;
-export const Middleline = styled.div`
-    color: rgb(229, 229, 229);
-    font-size: 16px;
-    font-weight: normal;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    span{
-        white-space: nowrap;
-    }
-`;
-export const MiddlelineTop = styled.div`
-     color: rgb(229, 229, 229);
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    span{
-        white-space: nowrap;
-    }
-`;
-export const UnderLine = styled.div`
-    border: 1px dashed rgba(255, 255, 255, 0.16);
-    width: 100%;
-    margin: 14px 10px 4px;
-`;
-export const MetaImg = styled.img`
-    margin-left: 5px;
-`;
-export const MetaBtn = styled.div`
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 24px;
-    width: 82.67px;
-    height: 42px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    :hover{
-        background-color: rgba(255, 255, 255, 0.3);
-    }
+    margin-top: 100px;
 `;
 export const Bottom = styled.div`
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+`;
+export const TLeft = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+`;
+export const TMiddle = styled.div`
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+    flex-direction: column;
     align-items: center;
 `;
-export const BuyBtn = styled.div`
-    padding: 0 14px;
-    height: 42px;
-    border-radius: 10px;
+export const TRight = styled.div`
     display: flex;
-    cursor: pointer;
+    justify-content: center;
+    align-items: flex-start;
+`;
+export const MMiddle = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+`;
+export const MLeft = styled.div`
+
+`;
+export const MRight = styled.div`
+
+`;
+export const BLeft = styled.div`
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    background-image: linear-gradient(93deg, rgb(48, 9, 221) 0%, rgb(230, 29, 225) 40%, rgb(130, 29, 230) 70%, rgb(130, 29, 230) 102%);
-    background-position: -2px 0%;
-    background-size: 220% 100%;
-    transition: all 0.2s ease-in-out 0s;
-    :hover{
-        background-position-x: 95%;
+    position: relative;
+`;
+export const BMiddle = styled.div`
+    display: flex;
+    align-items: center;
+`;
+export const BRight = styled.div`
+
+`;
+export const StickContainer = styled.div`
+    position: relative;
+`;
+export const StickImg = styled.img`
+
+`;
+export const StickCircleImg = styled.img`
+    position: absolute;
+    left: 40px;
+    bottom: -30px;
+    animation: anim 2s infinite;
+    @keyframes anim {
+        0% {
+            opacity: 1;
+        }   
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 `;
-export const BottomRight = styled.div`
+export const EarthContainer = styled.div`
+    position: relative;
+    margin-top: 70px;
+    margin-right: 50px;
+    :hover{
+        .earthimg {
+            opacity: 1;
+        }
+    }
+`;
+export const EarthImg = styled.img``;
+export const Earthletter = styled.img`
+    position: absolute;
+    left: -33px;
+    transition: all .3s;
+    opacity: 0.3;
+    top: -23px;
+`;
+export const WarningContainer = styled.div`
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
 `;
-export const MintBtn = styled.div`
-    padding: 0px 18px;
-    font-size: 14px;
-    border-radius: 10px;
-    margin-right: 15px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    line-height: 1;
-    display: inline-flex;
-    position:relative;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    height: 42px;
-    background-image: linear-gradient(93deg, rgb(48, 9, 221) 0%, rgb(230, 29, 225) 40%, rgb(130, 29, 230) 70%, rgb(130, 29, 230) 102%);
-    background-position: -2px 0%;
-    cursor: pointer;
-    z-index:1;
-    background-size: 220% 100%;
-    transition: all 0.2s ease-in-out 0s;
-    :hover{
-        background-position-x: 95%;
-        ::before{
+export const ThreeImg = styled.img`
+    margin-right: 60px;
+    animation: anim 3s infinite;
+    @keyframes anim {
+        0% {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        100% {
             opacity: 0;
         }
     }
-    ::before{
-        content: " ";
-        position: absolute;
-        inset: 1px;
-        border-radius: 10px;
-        background-color: rgb(20, 57, 94);
-        z-index: -1;
-    }
 `;
-export const Staketop = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
-`;
-export const StakeImg = styled.img`
-    width: ${(props) => props.width};
-    height: 36px;
-    margin-right: 10px;
-`;
-export const StopLeft = styled.div`
-    font-size: 20px;
-    font-weight: bolder;
-    color: #fff;
-`;
-export const StopRight = styled.div`
-    margin-left: auto;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 600;
-    color: rgb(241, 60, 242);
-    text-decoration: underline;
-    transition: all .3s ease-in-out;
+export const WarningImg = styled.img`
+    opacity: 0.4;
+    transition: all .3s;
     :hover{
-        color: #fff;
+        opacity: 1;
     }
 `;
-export const StakeLine = styled.div`
+export const ConnectText = styled.div`
+    color: #00FDFF;
+    font-family: 'Andika New Basic';
+    cursor: pointer;
+    margin: 50px 0;
+`;
+export const LogoImg = styled.img`
+    width: 150px;
+`;
+export const HomeMenu = styled.div`
+    font-family: 'Andika New Basic';
+    font-size: 14.5px;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    gap: 20px;
+`;
+export const HomeMenuItem = styled.div`
+    cursor: pointer;
+    color: #e6e6e6;
+`;
+export const BuyMenu = styled.div`
+    color: #e6e6e6;
+    font-family: 'Andika New Basic';
+    font-size: 14.5px;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-`;
-export const SlineLeft = styled.div`
-    display: flex;
-    align-items: center;
-`;
-export const SlineRight = styled.div``;
-export const XFMText = styled.div`
-    margin-left: 10px;
-`;
-export const XFMleft = styled.div`
-    display:flex;
-    align-items:center;
-`;
-export const XFMRight = styled.div`
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-    @media screen and (max-width:450px){
-        font-size: 18px !important;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: all .3s ease-in-out;
+    gap: 22px;
+    animation: changecolor 4s infinite;
+
+
+    @keyframes changecolor {
+        0% {
+            background: linear-gradient(180deg, #0085FF 0%, #597FFC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            transition: all .3s ease-in-out;
+            text-shadow: 0px 0px 7px rgba(89, 127, 252, 0.33);
+        }
+        50% {
+            background: linear-gradient(180deg, #00FDFF 0%, #00FDFC 47.4%, #00FF09 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all .3s ease-in-out;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0px 0px 7px rgba(89, 127, 252, 0.33);
+        }
+        100% {
+            background: linear-gradient(180deg, #00FF09 67.19%, #597FFC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all .3s ease-in-out;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0px 0px 7px rgba(89, 127, 252, 0.33);
+        }
     }
 `;
-export const XFMTop = styled.div`
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 16px;
+export const BuyMenuItem = styled.div`
+    cursor: pointer;
 `;
-export const XFMBottom = styled.div`
-    font-weight: normal;
-    color: rgb(229, 229, 229);
-    font-size: 13px;
-    margin-top: 5px;
-    @media screen and (max-width:450px){
-        width: 155px !important;
-    }
+export const Text1 = styled.div`
+    color: #e6e6e6;
+    width: 360px;
+    text-align: center;
+    font-family: 'Andika New Basic';
+    font-size: 14px;
 `;
-export const XFMImg = styled.img`
-    width: 45px;
-    height: ${(props) => props.height};
+export const Text2 = styled.div`
+    color: #e6e6e6;
+    font-family: 'Andika New Basic';
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    width: 370px;
 `;
-export const Spiderline = styled.img`
-    position:absolute;
-    right: 0;
+export const PlusImg = styled.img`
+    position: absolute;
     bottom: 0;
-    width: 134px;
-    height: 80px;
+    right: -100px;
+    animation: plusanim 10s infinite;
+    @keyframes plusanim {
+        0% {
+            opacity: 1;
+        }
+        10% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+`;
+export const BackBtnImg = styled.img`
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    bottom: 20px;
+    animation: backanim 5s infinite;
+    @keyframes backanim {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+`;
+export const BatteryContainer = styled.div`
+    margin-left: 140px;
+    display: flex;
+`;
+export const BatteryImg = styled.img`
+    width: 170px;
+    animation: batteryanim 10s infinite;
+    @keyframes batteryanim {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+            content: url('img/twobattery.svg');
+            width: 170px;
+        }   
+        75% {
+            opacity: 1;
+            content: url('img/fourbattery.svg');
+            width: 170px;
+        }
+        100% {
+            opacity: 1;
+            content: url('img/allbattery.svg');
+            width: 170px;
+        }
+    }
+`;
+export const BatteryPlusImg = styled.img`
+    margin-top: -100px;
+    margin-left: 30px;
+    animation: plusanim 6s infinite;
+    @keyframes plusanim {
+        0% {
+            opacity: 1;
+        }
+        10% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+`;
+export const BottomText = styled.div`
+    font-family: 'Andika New Basic';
+    color: #5b7ff8;
+    width: 440px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    span{
+        color: #00fdff;
+        font-style: italic;
+    }
+`;
+export const FactImg = styled.img`
+    width: 400px;
+    margin-bottom: -120px;
+    animation: factanim 4s infinite;
+    @keyframes factanim {
+        0% {
+            opacity: 0.2;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.2;
+        }
+    }
+`;
+
+export const Gradient1 = styled.div`
+    background: linear-gradient( -45deg, #341d2e , #000, #321e2d );
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 265px;
+    height: 365px;
+    ::after {
+        content: "";
+        position: absolute;
+        width: 261px;
+        border-radius: 10px;
+        top: 2px;
+        left: 2px;
+        height: 361px;
+        /* background-color: black; */
+    }
+`;
+export const Gradient2 = styled.div`
+    background: linear-gradient( #283b2f ,#000, #642a8a, #000,#1b3428 );
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 265px;
+    height: 365px;
+    ::after {
+        content: "";
+        position: absolute;
+        width: 261px;
+        border-radius: 10px;
+        top: 2px;
+        left: 2px;
+        height: 361px;
+        /* background-color: black; */
+    }
+`;
+export const Gradient3 = styled.div`
+    background: linear-gradient( 45deg, #000 , #112933, #205859 );
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 265px;
+    height: 365px;
+    ::after {
+        content: "";
+        position: absolute;
+        width: 261px;
+        border-radius: 10px;
+        top: 2px;
+        left: 2px;
+        height: 361px;
+        /* background-color: black; */
+    }
+`;
+export const GlogoImg = styled.img`
+    width: 100px;
+`;
+export const Title = styled.div`
+    font-family: 'Andika New Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+`;
+export const SubText = styled.div`
+    font-family: 'Andika New Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: ${(props)=>props.color};
+`;
+export const Subtitle = styled.div`
+    font-family: 'Andika New Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+`;
+export const Dollar = styled.div`
+    font-family: 'Andika New Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+`;
+export const Text = styled.div`
+    font-family: 'Andika New Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+
+`;
+export const ChipGrp = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    left: -48px;
+    position: absolute;
+    bottom: 15px;
+`;
+export const ChipImg = styled.img`
+    width: 50px;
+    @keyframes chipanim {
+        0% {
+            opacity: 1;
+        }
+        1% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 1;
+        }
+        3% {
+            opacity: 0;
+        }
+        4% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    :hover{
+        animation: chipanim 5s;
+    }
+`;
+export const LeftWaveImg = styled.img`
+
+`;
+export const RightWaveImg = styled.img`
+    
+`;
+export const Chip2Grp = styled.div`
+    position: absolute;
+    top: -47px;
+`;
+export const Chip2Img = styled.img`
+    width: 35px;
+    @keyframes chipanim {
+        0% {
+            opacity: 1;
+        }
+        1% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 1;
+        }
+        3% {
+            opacity: 0;
+        }
+        4% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    :hover{
+        animation: chipanim 5s;
+    }
+`;
+export const Chip3Grp = styled.div`
+    position: absolute;
+    right: -55px;
+    top: 90px;
+`;
+export const Chip3Img = styled.img`
+    @keyframes chipanim {
+        0% {
+            opacity: 1;
+        }
+        1% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 1;
+        }
+        3% {
+            opacity: 0;
+        }
+        4% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    :hover{
+        animation: chipanim 5s;
+    }
+`;
+export const OneLineImg = styled.img`
+    width: 100%;
+    animation: onelineanim 8s infinite;
+    @keyframes onelineanim {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+`;
+export const TwoLineImg = styled.img`
+    width: 100%;
+    animation: onelineanim 5s infinite;
+    @keyframes onelineanim {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 `;

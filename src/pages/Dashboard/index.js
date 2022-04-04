@@ -1,149 +1,148 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HiOutlineExternalLink } from "react-icons/hi";
-import { Title, Text, XFMText, Spiderline, XFMleft, XFMRight, XFMTop, XFMBottom, XFMImg, StakeLine, SlineLeft, SlineRight, Staketop, StakeImg, StopLeft, StopRight, BuyBtn, MintBtn, Token, UnderLine, BottomRight, Middle, Bottom, MetaBtn, MetaImg, MiddlelineTop, Middleline, TokenText, GreenColor, Ttitle, Ttext, RightTop, RightBottom, TokenLeft, TokenImg, TokenRight, ItemXFM, ItemsPart, ItemStaking, ItemToken, TotalValue, RightSpider, LockedText, LeftGhost } from "./dashboard.style";
+import {Home,Top,Middle,Bottom,TLeft,TMiddle,TRight,MMiddle,MLeft,MRight,BLeft,BMiddle,BRight,StickContainer,StickImg,StickCircleImg,EarthContainer,EarthImg,Earthletter,ThreeImg,WarningImg,WarningContainer,ConnectText,LogoImg,HomeMenu,HomeMenuItem,BuyMenu,BuyMenuItem,Text1,Text2,PlusImg,BackBtnImg,BatteryContainer,BatteryImg,BatteryPlusImg,BottomText,FactImg,Gradient1,Gradient2,Gradient3,GlogoImg,Title,SubText,Subtitle,Dollar,Text,ChipGrp,ChipImg,LeftWaveImg,RightWaveImg,Chip2Grp,Chip2Img,Chip3Grp,Chip3Img,OneLineImg,TwoLineImg,} from "./dashboard.style";
 
-export default function DashboardContainer() {
+export default function HomeContainer() {
     return (
         <>
-            <Title>Welcome to Fantasm</Title>
-            <Text>Fractional-Algorithmic Synthetic Token pegged to the value of 1 FTM on Fantom Opera</Text>
-            {/* <TotalValue>
-                <LeftGhost src='img/bg-tvl-left.7449613aab9e63ff22be.png' alt='' />
-                <RightSpider src='img/pinkspider.png' alt='' />
-
-                Total Value Locked&nbsp;&nbsp;<LockedText>$889,728</LockedText>
-            </TotalValue> */}
-            <ItemsPart>
-                <ItemToken>
-                    <Token>
-                        <TokenLeft>
-                            <TokenImg src='img/FSM.26a08c9ac39524cc989b.png' alt='' />
-                            <TokenText>
-                                <Ttitle>FSM</Ttitle>
-                                <Ttext>View contract&nbsp;<HiOutlineExternalLink /></Ttext>
-                            </TokenText>
-                        </TokenLeft>
-                        <TokenRight>
-                            <RightTop>Price:&nbsp;<GreenColor>3.6725854 FTM</GreenColor></RightTop>
-                            <RightBottom>$5.035915</RightBottom>
-                        </TokenRight>
-                    </Token>
-                    <Middle>
-                        <MiddlelineTop>
-                            <span>Circulating supply</span>
-                            <UnderLine />
-                            <span>168,020</span>
-                        </MiddlelineTop>
-                        <Middleline>
-                            <span>Market Cap</span>
-                            <UnderLine />
-                            <span>$1,090,755</span>
-                        </Middleline>
-                    </Middle>
-                    <Bottom>
-                        <MetaBtn>
-                            + <MetaImg src='img/metamask.png' alt='' />
-                        </MetaBtn>
-                        <BuyBtn>BUY FSM</BuyBtn>
-                    </Bottom>
-                </ItemToken>
-                <ItemToken>
-                    <Token>
-                        <TokenLeft>
-                            <TokenImg src='img/XFTM.df5dd5d99aa13e9a2819.png' alt='' />
-                            <TokenText>
-                                <Ttitle>XFTM</Ttitle>
-                                <Ttext>View contract&nbsp;<HiOutlineExternalLink /></Ttext>
-                            </TokenText>
-                        </TokenLeft>
-                        <TokenRight>
-                            <RightTop>Price:&nbsp;<GreenColor>3.6725854 FTM</GreenColor></RightTop>
-                            <RightBottom>$5.035915</RightBottom>
-                        </TokenRight>
-                    </Token>
-                    <Middle>
-                        <MiddlelineTop>
-                            <span>Circulating supply</span>
-                            <UnderLine />
-                            <span>168,020</span>
-                        </MiddlelineTop>
-                        <Middleline>
-                            <span>Market Cap</span>
-                            <UnderLine />
-                            <span>$1,090,755</span>
-                        </Middleline>
-                    </Middle>
-                    <Bottom>
-                        <MetaBtn>
-                            + <MetaImg src='img/metamask.png' alt='' />
-                        </MetaBtn>
-                        <BottomRight>
-                            <MintBtn>MINT</MintBtn>
-                            <BuyBtn>BUY XFTM</BuyBtn>
-                        </BottomRight>
-                    </Bottom>
-                </ItemToken>
-                <ItemStaking>
-                    <Staketop>
-                        <StopLeft>
-                            <StakeImg src='img/pinkcircle.png' width="22px" alt='' />
-                            STAKING
-                        </StopLeft>
-                        <StopRight>GO TO STAKING</StopRight>
-                    </Staketop>
-                    <StakeLine>
-                        <SlineLeft>Staking APR</SlineLeft>
-                        <SlineRight>0%</SlineRight>
-                    </StakeLine>
-                    <StakeLine>
-                        <SlineLeft>Lock APR</SlineLeft>
-                        <SlineRight>4,666%</SlineRight>
-                    </StakeLine>
-                </ItemStaking>
-                <ItemStaking>
-                    <Staketop>
-                        <StopLeft>
-                            <StakeImg src='img/pip.png' width="28px" alt='' />
-                            FARM
-                        </StopLeft>
-                        <StopRight>GO TO FARMS</StopRight>
-                    </Staketop>
-                    <StakeLine>
-                        <SlineLeft>FSM/FTM</SlineLeft>
-                        <SlineRight>APR:&nbsp;6,546%</SlineRight>
-                    </StakeLine>
-                    <StakeLine>
-                        <SlineLeft>FSM/XFTM</SlineLeft>
-                        <SlineRight>APR:&nbsp;22,088%</SlineRight>
-                    </StakeLine>
-                    <StakeLine>
-                        <SlineLeft>XFTM/FTM</SlineLeft>
-                        <SlineRight>APR:&nbsp;10,872%</SlineRight>
-                    </StakeLine>
-                </ItemStaking>
-                <ItemXFM>
-                    <XFMleft>
-                        <XFMImg src='img/blueghost.png' height="47.81px" alt='' />
-                        <XFMText>
-                            <XFMTop>COLLATERAL RATIO</XFMTop>
-                            <XFMBottom>Last update: 10/03/2022 04:22:27 GMT+9</XFMBottom>
-                        </XFMText>
-                    </XFMleft>
-                    <XFMRight>99.1%</XFMRight>
-                </ItemXFM>
-                <ItemXFM>
-                    <Spiderline src="img/spiderline.png" alt='' />
-                    <XFMleft>
-                        <XFMImg src='img/box.png' height="55.38px" alt='' />
-                        <XFMText>
-                            <XFMTop>XFTM60-MINTWAP</XFMTop>
-                            <XFMBottom>Last update: 10/03/2022 04:23:27 GMT+9</XFMBottom>
-                        </XFMText>
-                    </XFMleft>
-                    <XFMRight>0.015&nbsp;FTM</XFMRight>
-                </ItemXFM>
-            </ItemsPart>
+            <Home>
+                <Top>
+                    <TLeft>
+                        <StickContainer>
+                            <StickImg src='img/stick.svg' alt='' draggable={false} />
+                            <StickCircleImg src='img/stick-circle.svg' alt='' draggable={false} />
+                        </StickContainer>
+                        <EarthContainer>
+                            <Earthletter src='img/earth-letter.png' className="earthimg" alt='' draggable={false} />
+                            <EarthImg src='img/earth.svg' alt='' draggable={false} />
+                        </EarthContainer>
+                    </TLeft>
+                    <TMiddle>
+                        <LogoImg src='img/underlogo.png' alt='' draggable={false} />
+                        <HomeMenu>
+                            <Link to='/under'>
+                                <HomeMenuItem>Home</HomeMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <HomeMenuItem>Circuit</HomeMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <HomeMenuItem>The Loop</HomeMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <HomeMenuItem>Lyte</HomeMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <HomeMenuItem>Docs</HomeMenuItem>
+                            </Link>
+                        </HomeMenu>
+                        <BuyMenu>
+                            <Link to='/under'>
+                                <BuyMenuItem>Buy Amp</BuyMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <BuyMenuItem>Buy Current</BuyMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <BuyMenuItem>Farm Amp</BuyMenuItem>
+                            </Link>
+                            <Link to='/under'>
+                                <BuyMenuItem>Stake Current</BuyMenuItem>
+                            </Link>
+                        </BuyMenu>
+                        <Text1>
+                            AMP is an algorithmic stablecoin on Fuse, pegged to the price of 1 FUSE via seigniorage.
+                        </Text1>
+                        <Text2>
+                            Stake your AMP-FUSE LP in the Circuit to earn CURRENT rewards. Then stake your earned CURRENT in the Loop to earn more AMP.
+                        </Text2>
+                        <PlusImg src='img/plus.svg' draggable={false} alt='' />
+                    </TMiddle>
+                    <TRight>
+                        <ThreeImg src='img/threeway.png' alt='' draggable={false}/>
+                        <WarningContainer>
+                            <Link to='/under'>
+                                <ConnectText>CONNECT</ConnectText>
+                            </Link>
+                            <WarningImg src='img/warning.png' alt='' draggable={false} />
+                        </WarningContainer>
+                    </TRight>
+                </Top>
+                <Middle>
+                    <MLeft>
+                        <LeftWaveImg src='img/leftwave.svg' alt='' draggable={false} />
+                    </MLeft>
+                    <MMiddle>
+                        <Gradient1>
+                            <GlogoImg src='img/1.png' alt='' draggable={false} />
+                            <Title>CURRENT</Title>
+                            <Subtitle>CURRENT PRICE</Subtitle>
+                            <SubText color="#FF60D7">00.0000 TOKEN</SubText>
+                            <Dollar>$00.0000000</Dollar>
+                            <Text>MARKETCAP: 00000000</Text>
+                            <Text>CIRCULATING SUPPLY: 00000000</Text>
+                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <ChipGrp>
+                                <ChipImg src='img/pinkchip.svg' alt='' draggable={false} />
+                                <ChipImg src='img/pinkchip.svg' alt='' draggable={false} />
+                            </ChipGrp>
+                        </Gradient1>
+                        <OneLineImg src='img/leftline.svg' alt='' draggable={false} />
+                        <Gradient2>
+                            <GlogoImg src='img/2.png' alt='' draggable={false} />
+                            <Title>AMP</Title>
+                            <Subtitle>CURRENT PRICE</Subtitle>
+                            <SubText color="#8344ad">00.0000 TOKEN</SubText>
+                            <Dollar>$00.0000000</Dollar>
+                            <Text>MARKETCAP: 00000000</Text>
+                            <Text>CIRCULATING SUPPLY: 00000000</Text>
+                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <Chip2Grp>
+                                <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
+                                <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
+                                <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
+                                <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
+                            </Chip2Grp>
+                        </Gradient2>
+                        <TwoLineImg src='img/rightline.svg' alt='' draggable={false} />
+                        <Gradient3>
+                            <GlogoImg src='img/3.png' alt='' draggable={false} />
+                            <Title>LYTE</Title>
+                            <Subtitle>CURRENT PRICE</Subtitle>
+                            <SubText color="#77d3e9">00.0000 TOKEN</SubText>
+                            <Dollar>$00.0000000</Dollar>
+                            <Text>MARKETCAP: 00000000</Text>
+                            <Text>CIRCULATING SUPPLY: 00000000</Text>
+                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <Chip3Grp>
+                                <Chip3Img src='img/bluechip.svg' alt='' draggable={false} />
+                            </Chip3Grp>
+                        </Gradient3>
+                    </MMiddle>
+                    <MRight>
+                        <RightWaveImg src='img/rightwave.svg' alt='' draggable={false} />
+                    </MRight>
+                </Middle>
+                <Bottom>
+                    <BLeft>
+                        <Link to='/'>
+                            <BackBtnImg src='img/back.svg' alt='' draggable={false} />
+                        </Link>
+                        <BatteryContainer>
+                            <BatteryImg src='img/twobattery.svg' alt='' draggable={false}/>
+                            <BatteryPlusImg src='img/plus.svg' alt='' draggable={false}/>
+                        </BatteryContainer>
+                    </BLeft>
+                    <BMiddle>
+                        <BottomText>
+                            Below peg? Trade your AMP for LYTE to help close the Circuit so the Loop keeps generating electricity! <span>Read More</span>
+                        </BottomText>
+                    </BMiddle>
+                    <BRight>
+                        <FactImg src='img/factory.svg' alt='' draggable={false} />
+                    </BRight>
+                </Bottom>
+            </Home>
         </>
     )
 }

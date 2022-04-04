@@ -1,6 +1,10 @@
 @font-face {
-    font-family: Fredoka;
-    src: url('./assets/Fonts/Fredoka/static/Fredoka/Fredoka-Regular.ttf');
+    font-family: Andika New Basic;
+    src: url('./assets/Fonts/Andika_New_Basic/AndikaNewBasic-Regular.ttf');
+}
+@font-face {
+    font-family: Andika New BasicBold;
+    src: url('./assets/Fonts/Andika_New_Basic/AndikaNewBasic-Bold.ttf');
 }
 
 .threedot {
