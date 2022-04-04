@@ -6,6 +6,9 @@ export const UnderContain = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width:1440px){
+        width: 100%;
+    }
 `;
 export const UnderlogoImg = styled.img`
     width: 400px;
@@ -35,4 +38,8 @@ export const SocialIconImg = styled.img`
 export const SocialIcons = styled.div`
     position: absolute;
     bottom: 10px;
+    @media screen and (max-height:670px){
+        position: relative;
+        margin-top: 230px;
+    }
 `;

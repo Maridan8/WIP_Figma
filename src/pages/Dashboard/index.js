@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Home,Top,Middle,Bottom,TLeft,TMiddle,TRight,MMiddle,MLeft,MRight,BLeft,BMiddle,BRight,StickContainer,StickImg,StickCircleImg,EarthContainer,EarthImg,Earthletter,ThreeImg,WarningImg,WarningContainer,ConnectText,LogoImg,HomeMenu,HomeMenuItem,BuyMenu,BuyMenuItem,Text1,Text2,PlusImg,BackBtnImg,BatteryContainer,BatteryImg,BatteryPlusImg,BottomText,FactImg,Gradient1,Gradient2,Gradient3,GlogoImg,Title,SubText,Subtitle,Dollar,Text,ChipGrp,ChipImg,LeftWaveImg,RightWaveImg,Chip2Grp,Chip2Img,Chip3Grp,Chip3Img,OneLineImg,TwoLineImg,} from "./dashboard.style";
+import {Home,Top,Middle,Bottom,TLeft,TMiddle,TRight,MMiddle,MLeft,MRight,GradientContent,BLeft,BMiddle,BRight,StickContainer,StickImg,StickCircleImg,EarthContainer,EarthImg,Earthletter,ThreeImg,WarningImg,WarningContainer,ConnectText,LogoImg,HomeMenu,HomeMenuItem,BuyMenu,BuyMenuItem,Text1,Text2,PlusImg,BackBtnImg,BatteryContainer,BatteryImg,BatteryPlusImg,BottomText,FactImg,Gradient1,Gradient2,Gradient3,GlogoImg,Title,SubText,Subtitle,Dollar,Text,ChipGrp,ChipImg,LeftWaveImg,RightWaveImg,Chip2Grp,Chip2Img,Chip3Grp,Chip3Img,OneLineImg,TwoLineImg,} from "./dashboard.style";
 
 export default function HomeContainer() {
     return (
@@ -74,14 +74,16 @@ export default function HomeContainer() {
                     </MLeft>
                     <MMiddle>
                         <Gradient1>
-                            <GlogoImg src='img/1.png' alt='' draggable={false} />
-                            <Title>CURRENT</Title>
-                            <Subtitle>CURRENT PRICE</Subtitle>
-                            <SubText color="#FF60D7">00.0000 TOKEN</SubText>
-                            <Dollar>$00.0000000</Dollar>
-                            <Text>MARKETCAP: 00000000</Text>
-                            <Text>CIRCULATING SUPPLY: 00000000</Text>
-                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <GradientContent>
+                                <GlogoImg src='img/1.png' alt='' draggable={false} />
+                                <Title>CURRENT</Title>
+                                <Subtitle>CURRENT PRICE</Subtitle>
+                                <SubText color="#FF60D7">00.0000 TOKEN</SubText>
+                                <Dollar>$00.0000000</Dollar>
+                                <Text>MARKETCAP: 00000000</Text>
+                                <Text>CIRCULATING SUPPLY: 00000000</Text>
+                                <Text>TOTAL SUPPLY: 00000000</Text>
+                            </GradientContent>
                             <ChipGrp>
                                 <ChipImg src='img/pinkchip.svg' alt='' draggable={false} />
                                 <ChipImg src='img/pinkchip.svg' alt='' draggable={false} />
@@ -89,14 +91,16 @@ export default function HomeContainer() {
                         </Gradient1>
                         <OneLineImg src='img/leftline.svg' alt='' draggable={false} />
                         <Gradient2>
-                            <GlogoImg src='img/2.png' alt='' draggable={false} />
-                            <Title>AMP</Title>
-                            <Subtitle>CURRENT PRICE</Subtitle>
-                            <SubText color="#8344ad">00.0000 TOKEN</SubText>
-                            <Dollar>$00.0000000</Dollar>
-                            <Text>MARKETCAP: 00000000</Text>
-                            <Text>CIRCULATING SUPPLY: 00000000</Text>
-                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <GradientContent>
+                                <GlogoImg src='img/2.png' alt='' draggable={false} />
+                                <Title>AMP</Title>
+                                <Subtitle>CURRENT PRICE</Subtitle>
+                                <SubText color="#8344ad">00.0000 TOKEN</SubText>
+                                <Dollar>$00.0000000</Dollar>
+                                <Text>MARKETCAP: 00000000</Text>
+                                <Text>CIRCULATING SUPPLY: 00000000</Text>
+                                <Text>TOTAL SUPPLY: 00000000</Text>
+                            </GradientContent>
                             <Chip2Grp>
                                 <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
                                 <Chip2Img src='img/orangechip.svg' alt='' draggable={false} />
@@ -106,14 +110,16 @@ export default function HomeContainer() {
                         </Gradient2>
                         <TwoLineImg src='img/rightline.svg' alt='' draggable={false} />
                         <Gradient3>
-                            <GlogoImg src='img/3.png' alt='' draggable={false} />
-                            <Title>LYTE</Title>
-                            <Subtitle>CURRENT PRICE</Subtitle>
-                            <SubText color="#77d3e9">00.0000 TOKEN</SubText>
-                            <Dollar>$00.0000000</Dollar>
-                            <Text>MARKETCAP: 00000000</Text>
-                            <Text>CIRCULATING SUPPLY: 00000000</Text>
-                            <Text>TOTAL SUPPLY: 00000000</Text>
+                            <GradientContent>
+                                <GlogoImg src='img/3.png' alt='' draggable={false} />
+                                <Title>LYTE</Title>
+                                <Subtitle>CURRENT PRICE</Subtitle>
+                                <SubText color="#77d3e9">00.0000 TOKEN</SubText>
+                                <Dollar>$00.0000000</Dollar>
+                                <Text>MARKETCAP: 00000000</Text>
+                                <Text>CIRCULATING SUPPLY: 00000000</Text>
+                                <Text>TOTAL SUPPLY: 00000000</Text>
+                            </GradientContent>
                             <Chip3Grp>
                                 <Chip3Img src='img/bluechip.svg' alt='' draggable={false} />
                             </Chip3Grp>

@@ -3,19 +3,41 @@ import styled from "styled-components";
 export const Home = styled.div`
     width: 1440px;
     overflow: hidden;
+    @media screen and (max-width:1440px){
+        width: 100%;
+    }
 `;
 export const Top = styled.div`
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:1000px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 export const Middle = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    position: relative;
+    @media screen and (max-width:1250px){
+        padding: 0 100px;
+    }
+    @media screen and (max-width:465px){
+        padding: 0 60px;
+    }
+    @media screen and (max-width:440px){
+        padding: 0 30px;
+    }
 `;
 export const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:1250px){
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
 `;
 export const TLeft = styled.div`
     display: flex;
@@ -33,23 +55,39 @@ export const TRight = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    @media screen and (max-width:1440px){
+        padding-right: 20px;
+    }
 `;
 export const MMiddle = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width:1250px){
+        flex-direction: column;
+        gap: 20px;
+    }
 `;
 export const MLeft = styled.div`
-
+    @media screen and (max-width:1250px){
+        display: none;
+    }
 `;
 export const MRight = styled.div`
-
+    @media screen and (max-width:1250px){
+        display: none;
+    }
 `;
 export const BLeft = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    @media screen and (max-width:1250px){
+        width: 100%;
+        padding: 0 100px;
+        margin-bottom: 50px;
+    }
 `;
 export const BMiddle = styled.div`
     display: flex;
@@ -127,6 +165,13 @@ export const WarningImg = styled.img`
         opacity: 1;
     }
 `;
+export const GradientContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+`;
 export const ConnectText = styled.div`
     color: #00FDFF;
     font-family: 'Andika New Basic';
@@ -155,10 +200,8 @@ export const BuyMenu = styled.div`
     margin-top: 20px;
     margin-bottom: 40px;
     transition: all .3s ease-in-out;
-    gap: 22px;
+    column-gap: 22px;
     animation: changecolor 4s infinite;
-
-
     @keyframes changecolor {
         0% {
             background: linear-gradient(180deg, #0085FF 0%, #597FFC 100%);
@@ -188,6 +231,9 @@ export const BuyMenu = styled.div`
             text-shadow: 0px 0px 7px rgba(89, 127, 252, 0.33);
         }
     }
+    @media screen and (max-width:400px){
+        gap: 15px;
+    }
 `;
 export const BuyMenuItem = styled.div`
     cursor: pointer;
@@ -198,6 +244,10 @@ export const Text1 = styled.div`
     text-align: center;
     font-family: 'Andika New Basic';
     font-size: 14px;
+    @media screen and (max-width:400px){
+        width: 100%;
+        padding: 0 10px;
+    }
 `;
 export const Text2 = styled.div`
     color: #e6e6e6;
@@ -206,6 +256,10 @@ export const Text2 = styled.div`
     margin-top: 15px;
     text-align: center;
     width: 370px;
+    @media screen and (max-width:400px){
+        width: 100%;
+        padding: 0 10px;
+    }
 `;
 export const PlusImg = styled.img`
     position: absolute;
@@ -234,6 +288,9 @@ export const PlusImg = styled.img`
         100% {
             opacity: 1;
         }
+    }
+    @media screen and (max-width:610px){
+        display: none;
     }
 `;
 export const BackBtnImg = styled.img`
@@ -309,6 +366,9 @@ export const BatteryPlusImg = styled.img`
             opacity: 1;
         }
     }
+    @media screen and (max-width:420px){
+        margin-left: 0;
+    }
 `;
 export const BottomText = styled.div`
     font-family: 'Andika New Basic';
@@ -320,6 +380,10 @@ export const BottomText = styled.div`
     span{
         color: #00fdff;
         font-style: italic;
+    }
+    @media screen and (max-width:500px){
+        width: 100%;
+        padding: 0 20px;
     }
 `;
 export const FactImg = styled.img`
@@ -356,7 +420,13 @@ export const Gradient1 = styled.div`
         top: 2px;
         left: 2px;
         height: 361px;
-        /* background-color: black; */
+        background-color: black;
+        @media screen and (max-width:1250px){
+            width: calc(100% - 4px);
+        }
+    }
+    @media screen and (max-width:1250px){
+        order: 2;
     }
 `;
 export const Gradient2 = styled.div`
@@ -376,7 +446,13 @@ export const Gradient2 = styled.div`
         top: 2px;
         left: 2px;
         height: 361px;
-        /* background-color: black; */
+        background-color: black;
+        @media screen and (max-width:1250px){
+            width: calc(100% - 4px);
+        }
+    }
+    @media screen and (max-width:1250px){
+        order: 1;
     }
 `;
 export const Gradient3 = styled.div`
@@ -396,7 +472,13 @@ export const Gradient3 = styled.div`
         top: 2px;
         left: 2px;
         height: 361px;
-        /* background-color: black; */
+        background-color: black;
+        @media screen and (max-width:1250px){
+            width: calc(100% - 4px);
+        }
+    }
+    @media screen and (max-width:1250px){
+        order: 3;
     }
 `;
 export const GlogoImg = styled.img`
@@ -458,6 +540,9 @@ export const ChipGrp = styled.div`
     left: -48px;
     position: absolute;
     bottom: 15px;
+    @media screen and (max-width:440px){
+        display: none;
+    }
 `;
 export const ChipImg = styled.img`
     width: 50px;
@@ -543,6 +628,9 @@ export const Chip3Grp = styled.div`
     position: absolute;
     right: -55px;
     top: 90px;
+    @media screen and (max-width:440px){
+        display: none;
+    }
 `;
 export const Chip3Img = styled.img`
     @keyframes chipanim {
@@ -592,6 +680,9 @@ export const OneLineImg = styled.img`
             opacity: 1;
         }
     }
+    @media screen and (max-width:1250px){
+        display: none;
+    }
 `;
 export const TwoLineImg = styled.img`
     width: 100%;
@@ -606,5 +697,8 @@ export const TwoLineImg = styled.img`
         100% {
             opacity: 1;
         }
+    }
+    @media screen and (max-width:1250px){
+        display: none;
     }
 `;
