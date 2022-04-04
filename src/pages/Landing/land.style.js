@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LandOut = styled.div`
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -10,12 +10,13 @@ export const LandOut = styled.div`
     gap: 30px;
 `;
 export const LeftContainer = styled.div`
-    overflow-x: auto;
+    overflow: auto;
+    padding-top: 50px;
 `;
 export const Left = styled.div`
     min-width: 730px;
     width: 730px;
-    height: 775px;
+    height: 780px;
 `;
 
 export const LogoImg = styled.img`
