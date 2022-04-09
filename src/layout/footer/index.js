@@ -1,13 +1,10 @@
 import React from "react";
-// import {DiscordSVG} from "../../assets/svg/svg";
-import {UnderContain,UnderlogoImg,SoonText,SocialIconImg,SocialIcons,} from "./Under.style";
+import { Link } from "react-router-dom";
+import { LandOut,SocialIcons,SocialIconImg, } from "./footer.style";
 
-export default function UnderContainer() {
+export default function FooterContainer() {
     return (
-        <>
-            <UnderContain>
-                <UnderlogoImg src='img/underlogo.png' alt='' draggable={false} />
-                <SoonText>coming soon</SoonText>
+        <LandOut>
                 <SocialIcons>
                     <a href='https://discord.gg/moneytulip' target='_blank'>
                         <SocialIconImg src='img/discord.svg' alt='' draggable={false} />
@@ -19,7 +16,6 @@ export default function UnderContainer() {
                         <SocialIconImg src='img/twitter.svg' alt='' draggable={false} />
                     </a>
                 </SocialIcons>
-            </UnderContain>
-        </>
+        </LandOut> 
     )
 }

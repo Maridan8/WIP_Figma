@@ -20,13 +20,13 @@ export default function HomeContainer() {
                     <TMiddle>
                         <LogoImg src='img/underlogo.png' alt='' draggable={false} />
                         <HomeMenu>
-                            <Link to='/under'>
-                                <HomeMenuItem>Home</HomeMenuItem>
+                            <Link to='/home'>
+                                <HomeMenuItem><span>Home</span></HomeMenuItem>
                             </Link>
-                            <Link to='/under'>
+                            <Link to='/circuit'>
                                 <HomeMenuItem>Circuit</HomeMenuItem>
                             </Link>
-                            <Link to='/under'>
+                            <Link to='/loop'>
                                 <HomeMenuItem>The Loop</HomeMenuItem>
                             </Link>
                             <Link to='/under'>

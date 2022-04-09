@@ -7,73 +7,73 @@ export default function LandContainer() {
         <LandOut>
             <LeftContainer>
                 <Left>
-                    <LogoImg src='img/underlogo.png' alt='' />
+                    <LogoImg src='img/underlogo.png' draggable="false" alt='' />
                     <MachineContainer>
-                        <MachineImg src='img/landing/machineold.png' alt='' />
-                        <PedestalImg src='img/landing/pedestal.svg' alt='' />
-                        <MachineLineImg src='img/landing/machineLine.svg' alt='' />
-                        <WhitelineImg src='img/landing/whiteline.svg' alt='' />
-                        <LinearImg src='img/landing/linear.svg' alt='' />
-                        <StarImg src='img/landing/star.svg' alt='' />
-                        <PinkLinearImg src='img/landing/pinklinear.svg' alt='' />
-                        <LampImg src='img/landing/lamp1.png' alt='' />
-                        <BubbleBottleImg src='img/landing/bubblebottle.svg' alt='' />
-                        <BubblelightImg src='img/landing/bubblelight.svg' alt='' />
-                        <BubblelineImg src='img/landing/bubbleline.svg' alt='' />
-                        <PinkCircleImg src='img/landing/pinkcircle.svg' alt='' />
-                        <RocketImg src='img/landing/rocket.svg' alt='' />
-                        <FourdotImg src='img/landing/fourdot.svg' alt='' />
-                        <RocketLineImg src='img/landing/rocketline.svg' alt='' />
-                        <PinkLampImg src='img/landing/pinklamp.svg' alt='' />
-                        <PinkLamplightImg src='img/landing/pinklamplight.svg' alt='' />
-                        <CircleLineImg src='img/landing/circleline.svg' alt='' />
-                        <FlowerImg src='img/landing/flower.svg' alt='' />
-                        <DiamondImg src='img/landing/diamond1.png' alt='' />
-                        <YellowLinearImg src='img/landing/yellowlinear.svg' alt=''/>
-                        <PurpleLinearImg src='img/landing/purplelinear.svg' alt=''/>
-                        <BlueStarImg src='img/landing/bluestar.svg' alt=''/>
-                        <HelloImg src='img/landing/hello.svg' alt=''/>
-                        <PlusImg src='img/plus.svg' alt=''/>
-                        <MouseImg src='img/landing/mouse.svg' alt=''/>
-                        <TopstarImg src='img/landing/star.svg' alt='' />
-                        <BottomStarImg src='img/landing/star.svg' alt='' />
-                        <BigrocketImg src='img/landing/bigrocket.svg' alt='' />
-                        <DollarmarkImg src='img/landing/dollarmark.svg' alt='' />
-                        <DotboxImg src='img/landing/dotbox.svg' alt='' />
-                        <StickImg src='img/stick.svg' alt='' />
-                        <StickCircleImg src='img/stick-circle.svg' alt='' />
-                        <WhitedirectLineImg src='img/landing/whitedirectline.svg' alt="" />
-                        <OrangedirectLineImg src='img/landing/orangeline.svg' alt="" />
-                        <CrocodileImg src='img/landing/crocodile.svg' alt="" />
-                        <CircleLampImg src='img/landing/circlelamp.svg' alt="" />
-                        <CoupleCircleImg src='img/landing/coplecircle.svg' alt='' />
-                        <ThreedirectImg src="img/landing/threedirect.svg" alt='' />
-                        <ClockImg src='img/landing/clock1.png' alt='' />
-                        <BatteryImg src='img/landing/battery2.png' alt='' />
-                        <MoneyBoxImg src='img/landing/moneybox.svg' alt='' />
-                        <MoneyImg src='img/landing/money.svg' alt='' />
-                        <MoneyImg2 src='img/landing/money.svg' alt='' />
-                        <DotcircleImg src='img/landing/dotcircle.svg' alt='' />
-                        <GalguriImg src='img/landing/galguri.svg' alt='' />
-                        <CarImg src='img/landing/car.svg' alt='' />
-                        <FiveDotImg src='img/landing/fivedot.svg' alt='' />
-                        <SelmaeImg src='img/landing/selmae.svg' alt='' />
-                        <ChipImg src='img/landing/chip.svg' alt='' />
-                        <OralineImg src='img/landing/oraline.svg' alt='' />
-                        <PinkLineImg src='img/landing/pinkline.svg' alt='' />
-                        <SeveralDotImg src='img/landing/severaldot.svg' alt='' />
-                        <EarchImg src='img/earth.svg' alt='' />
-                        <YesLineImg src='img/landing/yesline.svg' alt='' />
-                        <LastStarImg src='img/landing/star.svg' alt='' />
-                        <TargetImg src='img/landing/target.svg' alt='' />
-                        <GrassImg src='img/landing/grass.svg' alt='' />
-                        <ThreeChipImg src='img/landing/threechip.svg' alt='' />
+                        <MachineImg src='img/landing/machineold.png' draggable="false" alt='' />
+                        <PedestalImg src='img/landing/pedestal.svg' draggable="false" alt='' />
+                        <MachineLineImg src='img/landing/machineLine.svg' draggable="false" alt='' />
+                        <WhitelineImg src='img/landing/whiteline.svg' draggable="false" alt='' />
+                        <LinearImg src='img/landing/linear.svg' draggable="false" alt='' />
+                        <StarImg src='img/landing/star.svg' draggable="false" alt='' />
+                        <PinkLinearImg src='img/landing/pinklinear.svg' draggable="false" alt='' />
+                        <LampImg src='img/landing/lamp1.png' draggable="false" alt='' />
+                        <BubbleBottleImg src='img/landing/bubblebottle.svg' draggable="false" alt='' />
+                        <BubblelightImg src='img/landing/bubblelight.svg' draggable="false" alt='' />
+                        <BubblelineImg src='img/landing/bubbleline.svg' draggable="false" alt='' />
+                        <PinkCircleImg src='img/landing/pinkcircle.svg' draggable="false" alt='' />
+                        <RocketImg src='img/landing/rocket.svg' draggable="false" alt='' />
+                        <FourdotImg src='img/landing/fourdot.svg' draggable="false" alt='' />
+                        <RocketLineImg src='img/landing/rocketline.svg' draggable="false" alt='' />
+                        <PinkLampImg src='img/landing/pinklamp.svg' draggable="false" alt='' />
+                        <PinkLamplightImg src='img/landing/pinklamplight.svg' draggable="false" alt='' />
+                        <CircleLineImg src='img/landing/circleline.svg' draggable="false" alt='' />
+                        <FlowerImg src='img/landing/flower.svg' draggable="false" alt='' />
+                        <DiamondImg src='img/landing/diamond1.png' draggable="false" alt='' />
+                        <YellowLinearImg src='img/landing/yellowlinear.svg' draggable="false" alt=''/>
+                        <PurpleLinearImg src='img/landing/purplelinear.svg' draggable="false" alt=''/>
+                        <BlueStarImg src='img/landing/bluestar.svg' draggable="false" alt=''/>
+                        <HelloImg src='img/landing/hello.svg' draggable="false" alt=''/>
+                        <PlusImg src='img/plus.svg' draggable="false" alt=''/>
+                        <MouseImg src='img/landing/mouse.svg' draggable="false" alt=''/>
+                        <TopstarImg src='img/landing/star.svg' draggable="false" alt='' />
+                        <BottomStarImg src='img/landing/star.svg' draggable="false" alt='' />
+                        <BigrocketImg src='img/landing/bigrocket.svg' draggable="false" alt='' />
+                        <DollarmarkImg src='img/landing/dollarmark.svg' draggable="false" alt='' />
+                        <DotboxImg src='img/landing/dotbox.svg' draggable="false" alt='' />
+                        <StickImg src='img/stick.svg' draggable="false" alt='' />
+                        <StickCircleImg src='img/stick-circle.svg' draggable="false" alt='' />
+                        <WhitedirectLineImg src='img/landing/whitedirectline.svg' draggable="false" alt="" />
+                        <OrangedirectLineImg src='img/landing/orangeline.svg' draggable="false" alt="" />
+                        <CrocodileImg src='img/landing/crocodile.svg' draggable="false" alt="" />
+                        <CircleLampImg src='img/landing/circlelamp.svg' draggable="false" alt="" />
+                        <CoupleCircleImg src='img/landing/coplecircle.svg' draggable="false" alt='' />
+                        <ThreedirectImg src="img/landing/threedirect.svg" draggable="false" alt='' />
+                        <ClockImg src='img/landing/clock1.png' draggable="false" alt='' />
+                        <BatteryImg src='img/landing/battery2.png' draggable="false" alt='' />
+                        <MoneyBoxImg src='img/landing/moneybox.svg' draggable="false" alt='' />
+                        <MoneyImg src='img/landing/money.svg' draggable="false" alt='' />
+                        <MoneyImg2 src='img/landing/money.svg' draggable="false" alt='' />
+                        <DotcircleImg src='img/landing/dotcircle.svg' draggable="false" alt='' />
+                        <GalguriImg src='img/landing/galguri.svg' draggable="false" alt='' />
+                        <CarImg src='img/landing/car.svg' draggable="false" alt='' />
+                        <FiveDotImg src='img/landing/fivedot.svg' draggable="false" alt='' />
+                        <SelmaeImg src='img/landing/selmae.svg' draggable="false" alt='' />
+                        <ChipImg src='img/landing/chip.svg' draggable="false" alt='' />
+                        <OralineImg src='img/landing/oraline.svg' draggable="false" alt='' />
+                        <PinkLineImg src='img/landing/pinkline.svg' draggable="false" alt='' />
+                        <SeveralDotImg src='img/landing/severaldot.svg' draggable="false" alt='' />
+                        <EarchImg src='img/earth.svg' draggable="false" alt='' />
+                        <YesLineImg src='img/landing/yesline.svg' draggable="false" alt='' />
+                        <LastStarImg src='img/landing/star.svg' draggable="false" alt='' />
+                        <TargetImg src='img/landing/target.svg' draggable="false" alt='' />
+                        <GrassImg src='img/landing/grass.svg' draggable="false" alt='' />
+                        <ThreeChipImg src='img/landing/threechip.svg' draggable="false" alt='' />
                     </MachineContainer>
                 </Left> 
             </LeftContainer>
             <Right>
                 <Link to='/home'>
-                    <EnterBtn src='img/landing/enter1.png' alt='' />
+                    <EnterBtn src='img/landing/enter1.png' draggable="false" alt='' />
                 </Link>
             </Right>
         </LandOut>

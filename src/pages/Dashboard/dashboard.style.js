@@ -191,6 +191,9 @@ export const HomeMenu = styled.div`
 export const HomeMenuItem = styled.div`
     cursor: pointer;
     color: #e6e6e6;
+    span{
+        color: #9A00FF;
+    }
 `;
 export const BuyMenu = styled.div`
     color: #e6e6e6;
