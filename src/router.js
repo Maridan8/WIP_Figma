@@ -12,12 +12,14 @@ const Presale = lazy(() => import("./pages/Presale"));
 const Breaker = lazy(() => import("./pages/breaker"));
 const Circuit = lazy(() => import("./pages/circuit"));
 const Loop = lazy(() => import("./pages/loop"));
+const Compounder = lazy(() => import("./pages/compounder"));
+const Lyte = lazy(() => import("./pages/lyte"));
 
 const AppRouter = () => {
   const location = useLocation();
   return (
     <React.Fragment>
-      {(location.pathname === '/presale' || location.pathname === '/breaker' || location.pathname === '/loop' || location.pathname === '/circuit') && <Header />}
+      {(location.pathname === '/presale' || location.pathname === '/compounder' || location.pathname === '/breaker' || location.pathname === '/loop' || location.pathname === '/circuit' || location.pathname === '/lyte') && <Header />}
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/under" component={Underconstruction} />
@@ -26,8 +28,10 @@ const AppRouter = () => {
         <Route exact path="/breaker" component={Breaker} />
         <Route exact path="/circuit" component={Circuit} />
         <Route exact path="/loop" component={Loop} />
+        <Route exact path="/compounder" component={Compounder} />
+        <Route exact path="/lyte" component={Lyte} />
       </Switch>
-      {(location.pathname === '/presale') && <Footer />}
+      {(location.pathname === '/presale' || location.pathname === '/compounder') && <Footer />}
     </React.Fragment>
   );
 };

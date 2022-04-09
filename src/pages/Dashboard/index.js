@@ -29,7 +29,7 @@ export default function HomeContainer() {
                             <Link to='/loop'>
                                 <HomeMenuItem>The Loop</HomeMenuItem>
                             </Link>
-                            <Link to='/under'>
+                            <Link to='/lyte'>
                                 <HomeMenuItem>Lyte</HomeMenuItem>
                             </Link>
                             <Link to='/under'>
