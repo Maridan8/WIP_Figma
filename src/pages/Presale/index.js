@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LandOut,Title,LampImg,PricePart,PText,PL,RemainPart,RemainTitle,RemainValue,DepositPart,DepositInput,DepositBtn,ClaimPart,ClaimLineText,ClaimBtn } from "./presale.style";
 
-export default function LandContainer() {
+export default function PresaleContainer() {
     return (
         <LandOut>
                 <Title>
